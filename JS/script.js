@@ -47,7 +47,7 @@ window.addEventListener('scroll', scrollActive)
 function scrollHeader() {
     const nav = document.getElementById('header')
     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-    // if (this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+    if (this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -55,7 +55,7 @@ window.addEventListener('scroll', scrollHeader)
 function scrollTop() {
     const scrollTop = document.getElementById('scroll-top');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    // if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+    if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
 
@@ -89,50 +89,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*==================== SCROLL REVEAL ANIMATION ====================*/
-// const sr = ScrollReveal({
-//     origin: 'top',
-//     distance: '30px',
-//     duration: 2000,
-//     reset: true
-// });
-
-// sr.reveal(`.home__data, .home__img,
-//             .about__data, .about__img,
-//             .services__content, .menu__content,
-//             .app__data, .app__img,
-//             .contact__data, .contact__button,
-//             .footer__content`, {
-//     interval: 200
-// })
-
-
-// Nav search input
-
-// $('.container-2 input#search').mouseout(function () {
-//     if ($('.container-2 input#search').is(':focus')) {
-//         $('.container-2 .icon').css({
-//             'color': '#93a2ad',
-//             'margin-left': '-253px'
-//         });
-//     } else {
-//         $('.container-2 .icon').css({
-//             'color': '#4f5b66',
-//             'margin-left': '0px',
-//         });
-//     }
-// });
-
-// $('.container-2 input#search').mouseenter(function () {
-//     $('.container-2 .icon').css({
-//         'color': '#93a2ad',
-//         'margin-left': '-253px'
-//     });
-// });
-
-// $('.container-2 input#search').focusout(function () {
-//     $('.container-2 .icon').css({
-//         'color': '#4f5b66',
-//         'margin-left': '0px',
-//     });
-// });
