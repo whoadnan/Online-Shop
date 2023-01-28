@@ -92,7 +92,7 @@ header a:hover {
     display: flex;
 }
 
-#navbar-nav {
+#navbarSupportedContent {
     position: relative;
     animation-name: navbar;
     animation-duration: 3s;
