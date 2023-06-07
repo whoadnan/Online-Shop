@@ -219,6 +219,10 @@ header .container .col-md-7 p {
     transform: scale(1.1);
 }
 
+.imgclcn {
+    height: 27vmax;
+}
+
 
 /* Items*/
 .more {
@@ -480,4 +484,32 @@ a:link {
 .container-3:hover input#search {
     width: 200px;
     margin: 0 -250px 0 0;
+}
+
+
+/* Media queries */
+
+/* tabs */
+@media (max-width:768) {
+    header .row .col-md-5 img {
+        display: none;
+    }
+
+
+}
+
+/* lg mobiles */
+@media (max-width: 576px) {
+    #navbarSupportedContent {
+        justify-content: center;
+    }
+
+    header .row .col-md-5 img {
+        display: none;
+    }
+
+    #shopnw {
+        margin-left: -.8rem;
+    }
+
 }
